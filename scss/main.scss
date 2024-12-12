@@ -1,0 +1,22 @@
+@import './abstracts/variables';
+@import './abstracts/mixin';
+
+
+@import './base/reset';
+@import './base/fonts';
+
+
+@import './components/header';
+@import './components/hero';
+
+
+@import './pages/home';
+
+
+
+
+
+// body{
+//     background-color: red;
+// }
+
