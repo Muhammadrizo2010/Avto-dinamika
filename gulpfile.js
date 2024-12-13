@@ -16,7 +16,7 @@ function compileSass() {
 }
 
 function watchFiles() {
-  gulp.watch('./dist/css/main.css', compileSass); 
+  gulp.watch("./scss/**/*.scss", { usePolling: true }, compileSass);
 }
 
 exports.default = gulp.series(compileSass, watchFiles);
