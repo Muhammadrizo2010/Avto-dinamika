@@ -1,20 +1,15 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
-const sourcemaps = require('gulp-sourcemaps');
+const gulp = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
 
+// Vazifa: Sassni kompilyatsiya qilish
 function compileSass() {
   return gulp
-    .src('./scss/main.scss') 
-    .pipe(sourcemaps.init())    
-    .pipe(sass().on('error', sass.logError)) 
-    .pipe(postcss([autoprefixer(), cssnano()])) 
-    .pipe(sourcemaps.write('.')) 
-    .pipe(gulp.dest('./dist/css')); 
+    .src("./scss/main.scss")
+    .pipe(sass().on("error", sass.logError))
+    .pipe(gulp.dest("./dist/css"));
 }
 
+// Kuzatuv vazifasi
 function watchFiles() {
   gulp.watch("./scss/**/*.scss", { usePolling: true }, compileSass);
 }

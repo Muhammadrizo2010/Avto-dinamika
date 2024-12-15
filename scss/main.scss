@@ -1,16 +1,21 @@
-@import './abstracts/variables';
-@import './abstracts/mixin';
+@use './abstracts/variables';
+@use './abstracts/mixin';
 
 
-@import './base/reset';
-@import './base/fonts';
+@use './base/reset';
+@use './base/fonts';
 
 
-@import './components/header';
-@import './components/hero';
+@use './components/header';
+@use './components/hero';
+@use "./components/contact-hero";
+@use "./components/container";
+@use "./components/section";
+@use "./components/section-car";
 
 
-@import './pages/home';
+@use './pages/home';
+
 
 
 

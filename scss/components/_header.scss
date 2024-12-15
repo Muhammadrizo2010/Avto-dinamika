@@ -1,8 +1,9 @@
 .header{
+
 }
 
 .top-page-line {
-    padding: 17px;
+    padding: 17px 0;
     background: #000000;
     color: white;
   }
@@ -75,8 +76,8 @@
   }
   
   .header__wrapper {
-    gap: 100px;
-    margin-left: -50px;
+    gap: 140px;
+    margin-left: -105px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,8 +93,9 @@
   .header__menu {
     align-items: center;
     display: flex;
-    gap: 26px;
+    gap: 30px;
     list-style: none;
+    // margin-left: -55px;
   }
   
   .header__link {
@@ -127,7 +129,8 @@
     }
     .header__wrapper {
         display: flex;
-        gap: 600px;
+        gap: 680px;
+        margin-left: -10px;
     }
     .header__menu {
         display: none;
