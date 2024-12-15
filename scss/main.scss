@@ -1,22 +1,12 @@
-@import './abstracts/variables';
-@import './abstracts/mixin';
+@use "./abstracts/variables";
+@use "./abstracts/mixin";
 
+@use "./base/reset";
+@use "./base/fonts";
 
-@import './base/reset';
-@import './base/fonts';
+@use "./components/header";
+@use "./components/hero";
+@use "./components/cotegory-main";
 
-
-@import './components/header';
-@import './components/hero';
-
-
-@import './pages/home';
-
-
-
-
-
-// body{
-//     background-color: red;
-// }
-
+@use "./pages/home";
+@use "./components/container"
