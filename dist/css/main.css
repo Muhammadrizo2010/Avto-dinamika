@@ -265,5 +265,21 @@ ul {
   }
 }
 .contact__hero-text {
-  background-color: red;
+  margin-top: 30px;
+}
+
+.contact__hero-title {
+  font-size: 30px;
+}
+
+.contact__hero-location {
+  width: 800px;
+}
+
+.container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
