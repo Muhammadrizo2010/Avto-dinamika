@@ -290,7 +290,7 @@ ul {
     margin-left: 4px;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   .phone {
     display: none;
   }
@@ -2194,8 +2194,7 @@ ul {
 }
 
 .kia__item {
-  width: 351px;
-  height: 380px;
+  width: 90%;
   top: 3191px;
   left: 309px;
   gap: 0px;
@@ -2207,6 +2206,11 @@ ul {
 .kia__item img {
   border-radius: 4px 4px 0px 0px;
   margin-bottom: 15px;
+  width: 100%;
+}
+
+.kia__text-content {
+  padding: 15px;
 }
 
 .kia__date {
@@ -2217,7 +2221,6 @@ ul {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #424242;
-  margin-left: 15px;
 }
 
 .kia__subtitle {
@@ -2230,7 +2233,6 @@ ul {
   text-decoration-skip-ink: none;
   color: #212121;
   margin-top: 10px;
-  margin-left: 15px;
 }
 
 .kia__text {
@@ -2242,7 +2244,6 @@ ul {
   text-decoration-skip-ink: none;
   color: #424242;
   margin-top: 15px;
-  margin-left: 15px;
 }
 
 .avtodinamika__info {
@@ -2377,7 +2378,7 @@ ul {
     display: none;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   .catalog__menu {
     display: none;
   }
@@ -2389,6 +2390,21 @@ ul {
   }
   .catalog__filtre {
     flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .car__filtre {
+    width: 100%;
+  }
+  .sort__filtre {
+    margin-left: 30px;
+  }
+  .sort__btn {
+    display: none;
+  }
+  .search__filtre {
+    margin-left: 15px;
   }
   .sort__btns {
     display: none;
@@ -2414,10 +2430,16 @@ ul {
   .page__number--right {
     display: none;
   }
+  .next__pages {
+    padding-left: 35px;
+  }
   .test__drive__inner {
     width: 300px;
     height: 550px;
-    margin-left: -10px;
+    margin-left: 10px;
+  }
+  .kir__subtitle {
+    display: none;
   }
   .test__drive__ul {
     flex-wrap: wrap;
@@ -2434,9 +2456,6 @@ ul {
   .ostavit__zaefku__btn {
     margin-left: -10px;
   }
-  .test__drive__input__text__div {
-    display: none;
-  }
   .avtodinamika__info {
     width: 360px;
     height: 100%;
@@ -2446,6 +2465,12 @@ ul {
   }
   .kia__wrapper {
     display: block;
+  }
+  .kia__menu {
+    padding: 15px;
+    flex-wrap: wrap;
+    margin-top: 180px;
+    justify-content: center;
   }
   .kia__menu {
     flex-wrap: wrap;
