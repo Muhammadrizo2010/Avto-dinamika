@@ -68,8 +68,8 @@ cursor: pointer;
 
 .avtomobil__select-box {
     display: flex;
-    margin-left:75px;
-    gap: 58px;
+    margin-left:130px;
+    gap: 45px;
     margin-top: 50px;
 }
 
@@ -197,6 +197,19 @@ cursor: pointer;
     cursor: pointer;
 }
 
+.avtomobil__button-two {
+    width: 120px;
+    height: 40px;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: var(--zur);
+    border: 1px solid #FFFFFF;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+
 .select__btn {
     width: Fixed (255px)px;
     padding: 20px 86px 20px 86px;
@@ -242,6 +255,23 @@ cursor: pointer;
     display: flex;
     gap: 55px;
   }
+
+  .avtomobil__button-reapet {
+    display: none;
+    width: 120px;
+    height: 40px;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: var(--zur);
+    border: 1px solid #FFFFFF;
+    color:#FFFFFF;
+    cursor: pointer;
+    margin-top: -120px;
+  }
+
+
 
   @media only screen and (max-width:960px) {
 
@@ -374,7 +404,9 @@ opacity: 0px;
         transform: translateY(-50%);
         pointer-events: none;
     }
-
+.avtomobil__button-reapet {
+    display: none;
+}
 
 
     .avtomobil__title {
@@ -445,7 +477,9 @@ margin-left: -226px;
 margin-top: 20px;
     }
 
-
+.avtomobil__button-two {
+    margin-top: -80px;
+}
     .custom__select-three {
         width: 390px;
 height: 60px;
@@ -495,7 +529,72 @@ opacity: 0px;
 
   @media only screen and (max-width:320px) {
     .avtomobil__wrapper {
-        max-width: 100px;
-        flex-wrap: wrap;
+        
+    }
+
+    .avtomobil__button-two {
+        display: none;
+    }
+
+    .avtomobil__button-reapet {
+        display: block;
+        margin-top: -120px;
+        margin-bottom: 35px;
+        margin-left: -232px;
+    }
+
+    .avtomobil__title {
+        font-size: 22px;
+        margin-right: -120px;
+    }
+
+    .avtomobil__box {
+        margin-right: 10px;
+    }
+
+    .custom__select-two {
+        width: 270px;
+height: 60px;
+top: 216px;
+left: 30px;
+padding: 21px 15px 20px 15px;
+gap: 10px;
+border-radius: 4px;
+opacity: 0px;
+
+    }
+.avtomobil__big-box {
+    margin-left: -15px;
+}
+
+.avtomobil__name {
+    width: 270px;
+height: 60px;
+top: 376px;
+left: 30px;
+gap: 10px;
+border-radius: 4px;
+opacity: 0px;
+}
+
+.price__input {
+    width: 160px;
+    border-radius: 4px;
+}
+
+    .custom__select-three {
+        width: 270px;
+height: 60px;
+top: 216px;
+left: 30px;
+padding: 21px 15px 20px 15px;
+gap: 10px;
+border-radius: 4px;
+opacity: 0px;
+
+    }
+
+    .select__btn {
+        margin-left: -0.1px;
     }
   }

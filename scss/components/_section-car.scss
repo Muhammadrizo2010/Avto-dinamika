@@ -1,56 +1,363 @@
-.car {
+// .car {
 
+// }
+
+// .car__title {
+//     //styleName: H2;
+// font-family: Roboto;
+// font-size: 32px;
+// font-weight: 600;
+// line-height: 37.5px;
+// text-align: left;
+// text-underline-position: from-font;
+// text-decoration-skip-ink: none;
+// color: #212121;
+// margin-left: 70px;
+// margin-top: 100px;
+// }
+
+// .car__item {
+//     width: 130px;
+// height: 110px;
+// top: 1048px;
+// left: 309px;
+// // padding: 10px 14px 10px 14px;
+// // gap: 10px;
+// border-radius: 4px;
+// border: 1px 0px 0px 0px;
+// opacity: 0px;
+// background: #FFFFFF;
+// border: 1px solid #C7C7C7;
+// }
+
+
+// .car__menu {
+//     // max-width: 200px;
+//     display: flex;
+//     margin-left: 70px;
+//     margin-top: 40px;
+//     gap: 20px;
+// }
+
+// .car__menu-two {
+//     // max-width: 200px;
+//     display: flex;
+//     margin-left: 70px;
+//     margin-top: 20px;
+//     gap: 20px;
+// }
+
+// .car__menu-three {
+//     // max-width: 200px;
+//     display: flex;
+//     margin-left: 70px;
+//     margin-top: 20px;
+//     gap: 20px;
+// }
+
+// .car__text {
+//     //styleName: Brand Font;
+// font-family: Roboto;
+// font-size: 13px;
+// font-weight: 500;
+// line-height: 15.23px;
+// text-align: center;
+// text-underline-position: from-font;
+// text-decoration-skip-ink: none;
+// }
+
+// .car__link {
+    
+// }
+
+
+
+.car {
+    /* Add general styling if needed */
 }
 
 .car__title {
-    //styleName: H2;
-font-family: Roboto;
-font-size: 32px;
-font-weight: 600;
-line-height: 37.5px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #212121;
-margin-left: 70px;
-margin-top: 100px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #212121;
+    margin-left: 140px;
+    margin-top: 100px;
 }
 
 .car__item {
     width: 130px;
-height: 110px;
-top: 1048px;
-left: 309px;
-padding: 10px 14px 10px 14px;
-gap: 10px;
-border-radius: 4px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
-background: #FFFFFF;
-border: 1px solid #C7C7C7;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+    padding: 10px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.car__item-two,.car__item-three {
+    width: 130px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+    padding: 10px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.car__item:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+.car__item-three:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+.car__item-two:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* Slight hover effect */
 }
 
 .car__menu {
     display: flex;
-    margin-left: 70px;
-    margin-top: 40px;
+    justify-content: center;
+    margin-top: 20px;
     gap: 20px;
 }
 
 .car__menu-two {
     display: flex;
-    margin-left: 70px;
+    justify-content: center;
     margin-top: 20px;
     gap: 20px;
 }
+
 
 .car__menu-three {
     display: flex;
-    margin-left: 70px;
+    justify-content: center;
     margin-top: 20px;
     gap: 20px;
 }
 
-.car__text {
+.car__item-good {
+    width: 130px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+    padding: 10px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.car__item-good:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+.cars__text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 15.23px;
     text-align: center;
+    margin-top: 8px; 
+    color: #212121;
+}
+
+.car__link {
+    width: 130px;
+    height: 80px;
+    text-decoration: none; 
+    color: inherit; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.car__img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.car__box {
+    
+}
+
+.car__menu-four {
+    display: none;
+}
+
+.car__btn {
+    width: Fixed (320px)px;
+height: Fixed (60px)px;
+top: 1448px;
+left: 704px;
+padding: 20px 86px 20px 86px;
+gap: 10px;
+border: 2px solid #DC4433;
+border-radius: 4px;
+opacity: 0px;
+background: #DC4433;
+color: white;
+text-align: center;
+display: flex;
+margin-left: 600px;
+margin-bottom: 40px;
+margin-top: 30px;
+}
+
+@media only screen and (max-width:960px) {
+    .car__item {
+        max-width: 130px;
+        max-height: 130px;
+    }
+
+    .car__title {
+        margin-left: 18px;
+    }
+
+    .car__item-two {
+        display: none;
+    }
+    .car__btn {
+        margin-left: 330px;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .car__title {
+        font-size: 24px;
+        margin-left: -5px;
+    }
+    .car__box { 
+    }
+    .car__item-three {
+        display: none;
+    }
+
+    .car__item-two {
+        display: none;
+    }
+    
+    .car__menu-four {
+        display: block flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .car__btn {
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .car__item-good {
+        display: none;
+    }
+
+    .car__btn {
+        margin-left: 10px;
+    }
+}
+
+
+
+.name__input__test__drive-1 {
+    margin-left: -160px;
+    width: 190px;
+    height: 60px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    padding: 15px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #c7c7c7; 
+}
+
+.name__input__test__drive-2 {
+    margin-left: 0px;
+    width: 190px;
+    height: 60px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    padding: 15px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #c7c7c7;
+}
+
+.custom__select-four,.custom__select-five {
+    width: 190px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 2px;
+    gap: 10px;
+    opacity: 0px;
+    height: 60px;
+    color: #c3c3c3; 
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.custom__select-five {
+    width: 190px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 2px;
+    gap: 10px;
+    opacity: 0px;
+    height: 60px;
+    color: #c3c3c3; 
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-left: -100px;
+}
+
+.ostavit__zaefku__btn-one {
+    width: 190px;
+    height: 60px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    background-color: #dc4433;
+    border: none;
+    cursor: pointer;
+    margin-left: -10px;
 }

@@ -152,6 +152,7 @@ text-decoration-skip-ink: none;
     .hero__title {
       font-size: 22px;
       margin-top: 20px;
+      margin-left: px;
     }
     .hero__title-two {
       font-weight: 600;
@@ -162,13 +163,13 @@ text-decoration-skip-ink: none;
     .hero__item {
       width: 95px;
       font-family: Roboto;
-font-size: 12px;
+font-size: 10px;
 font-weight: 400;
 line-height: 11px;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 font-family: Roboto;
-font-size: 12px;
+font-size: 10px;
 font-weight: 500;
 line-height: 11px;
 text-underline-position: from-font;
@@ -179,13 +180,13 @@ align-items: center;
     .hero__item-two {
       width: 95px;
       font-family: Roboto;
-font-size: 12px;
+font-size: 10px;
 font-weight: 400;
 line-height: 11px;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 font-family: Roboto;
-font-size: 12px;
+font-size: 10px;
 font-weight: 500;
 line-height: 11px;
 text-underline-position: from-font;
@@ -197,13 +198,13 @@ align-items: center;
     .hero__item-three {
       width: 95px;
       font-family: Roboto;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 400;
       line-height: 11px;
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
       font-family: Roboto;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 500;
       line-height: 11px;
       text-underline-position: from-font;
@@ -212,9 +213,9 @@ align-items: center;
       align-items: center;
     }
     .hero__box {
-      margin-left: -3px;
+      margin-left: 1px;
     }
     .hero__text {
-      font-size: 13px;
+      font-size: 12px;
     }
   }

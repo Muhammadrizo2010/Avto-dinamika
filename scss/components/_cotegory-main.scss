@@ -14,6 +14,7 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  margin-left: 110px;
 }
 .catalog__item {
   color: #424242;
@@ -119,6 +120,7 @@
   display: flex;
   align-items: center;
   gap: 350px;
+  margin-left: 110px;
 }
 
 .catalog__filtre {
@@ -567,7 +569,8 @@
 .cars__wrapper {
   display: flex;
   align-items: center;
-  gap: 515px;
+  justify-content: center;
+  gap: 550px;
   margin-bottom: 40px;
 }
 .cars__subtitle {
@@ -723,6 +726,7 @@
   width: 1110px;
   background-size: cover;
   background-color: black;
+  margin-left: 175px;
 }
 
 .test__drive__ul {
@@ -839,6 +843,7 @@
 .kia__menu {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 .kia__item {
   width: 351px;
@@ -1029,12 +1034,19 @@
   .catalog__menu {
     display: none;
   }
+  .catalog__wrapper {
+  margin-left: 0px;
+  }
   .catalog__title {
     margin-top: 20px;
   }
   .catalog__filtre {
-    flex: 1 1 100%;
+    flex-direction: column;
   }
+
+.sort__btns {
+  display: none;
+}
 
   .models__menu {
     flex-wrap: wrap;
@@ -1079,6 +1091,10 @@
     margin-left: -10px;
   }
 
+  .avtodinamika__map {
+    width: 360px;
+  }
+
   .ostavit__zaefku__btn {
     margin-left: -10px;
   }
@@ -1100,7 +1116,8 @@
 
 .kia__menu{
   flex-wrap: wrap;
-  margin-top: 180px
+  margin-top: 180px;
+  margin-left: 50px;
 }
 
 
