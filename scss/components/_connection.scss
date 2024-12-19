@@ -25,15 +25,63 @@ color: #424242;
 }
 
 .connection__link {
-    width: 255px;
-height: 180px;
-top: 2737px;
-left: 309px;
-padding: 15px 0px 0px 0px;
-gap: 10px;
-border-radius: 4px 0px 0px 0px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
-color: #FFFFFF;
-border: 1px solid #C7C7C7
+//     width: 255px;
+// height: 180px;
+// top: 2737px;
+// left: 309px;
+// padding: 15px 0px 0px 0px;
+// gap: 10px;
+// border-radius: 4px 0px 0px 0px;
+// border: 1px 0px 0px 0px;
+// opacity: 0px;
+// color: #FFFFFF;
+}
+
+.connection__item {
+    width: 260px;
+    height: 180px;
+    top: 2737px;
+    left: 309px;
+    padding: 20px ;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    color: #FFFFFF;
+    border: 1px solid #C7C7C7;
+}
+
+.connection__menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:960px) {
+    .connection__menu {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width:460px) {
+
+    .connection__title {
+        font-size: 24px;
+    }
+
+    .connection__text {
+        font-size: 15px;
+    }
+    .connection__item {
+        width: 212px;
+    }
+
+    .connection__menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .kia__comfort_li {
+        margin-top: 60px;
+    }
 }
