@@ -8,15 +8,14 @@
 
 @import './components/header';
 @import './components/hero';
+@import './components/autocredit';
+@import './components/programm';
+@import './components/dinamik';
+@import './components/easy';
+@import './components/test';
+@import './components/news';
+@import './components/footer';
 
 
 @import './pages/home';
-
-
-
-
-
-// body{
-//     background-color: red;
-// }
-
+@import"./components/container";

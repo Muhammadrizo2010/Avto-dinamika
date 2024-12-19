@@ -1,0 +1,166 @@
+.avtodinamika__info {
+    width: 100%;
+    height: 537px;
+    background-color: #000000;
+  }
+  
+  .footer__inner {
+    display: flex;
+    gap: 67px;
+  }
+  
+  .avtodinamika__wrapper {
+    margin-top: 50px;
+  }
+  
+  .avtodinamika__work {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffffff;
+    margin-bottom: 5px;
+  }
+  .avtodinamika__number {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffffff;
+  }
+
+  .avtodinamika__number:hover {
+    color: #f1c40f; 
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .avtodinamika__phone--number {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    color: #ffffffff;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 10px;
+  }
+
+  .avtodinamika__phone--number:hover {
+    color: #e74c3c;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .avtodinamika__email {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .avtodinamika__email:hover {
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .avtodinamika__street {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    color: #ffffffff;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .avtodinamika__street:hover {
+    color: #2ecc71; 
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .avtodinamika__compani {
+    display: flex;
+    gap: 48px;
+    margin-top: 50px;
+  }
+  
+  .avtodinamika__menu {
+  }
+  
+  .avtodinamika__item {
+  }
+  
+  .avtodinamika__cars {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffffff;
+  }
+  .avtodinamika__car:hover {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .avtodinamika__car {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #c7c7c7;
+    margin-top: 10px;
+  }
+  
+  .avtodinamika__car:hover {
+    color: #ffffffff;
+    cursor: pointer;
+  }
+  
+  .avtodinamika__attention {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #c7c7c7;
+    margin-top: 30px;
+  }
+
+  .avtodinamika__attention:hover,
+.avtodinamika__condition:hover {
+  color: #bdc3c7; 
+  cursor: pointer;
+}
+  
+  .avtodinamika__condition {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #c7c7c7;
+    margin-top: 10px;
+  }
