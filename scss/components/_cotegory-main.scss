@@ -14,7 +14,6 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  margin-left: 110px;
 }
 .catalog__item {
   color: #424242;
@@ -120,7 +119,6 @@
   display: flex;
   align-items: center;
   gap: 350px;
-  margin-left: 110px;
 }
 
 .catalog__filtre {
@@ -1117,7 +1115,7 @@
   }
 
   .name__input__test__drive {
-    margin-left: -10px;
+    width: 300px;
   }
 
   .avtodinamika__map {

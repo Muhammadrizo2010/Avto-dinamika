@@ -85,7 +85,7 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #212121;
-    margin-left: 140px;
+    margin-left: -45px;
     margin-top: 100px;
 }
 
@@ -217,9 +217,10 @@ background: #DC4433;
 color: white;
 text-align: center;
 display: flex;
-margin-left: 600px;
+margin-left: 415px;
 margin-bottom: 40px;
 margin-top: 30px;
+cursor: pointer;
 }
 
 @media only screen and (max-width:960px) {
@@ -238,6 +239,11 @@ margin-top: 30px;
     .car__btn {
         margin-left: 330px;
     }
+
+
+
+
+
 }
 
 @media only screen and (max-width:460px) {
@@ -280,7 +286,7 @@ margin-top: 30px;
 
 
 .name__input__test__drive-1 {
-    margin-left: -160px;
+    margin-left: -220px;
     width: 190px;
     height: 60px;
     border-radius: 4px;
@@ -297,7 +303,7 @@ margin-top: 30px;
 }
 
 .name__input__test__drive-2 {
-    margin-left: 0px;
+    margin-left: -30px;
     width: 190px;
     height: 60px;
     border-radius: 4px;
@@ -313,7 +319,7 @@ margin-top: 30px;
     color: #c7c7c7;
 }
 
-.custom__select-four,.custom__select-five {
+.custom__select-four {
     width: 190px;
     padding: 20px 25px 20px 25px;
     border-radius: 2px;
@@ -329,6 +335,7 @@ margin-top: 30px;
     -moz-appearance: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    margin-left: -60px;
 }
 
 .custom__select-five {
@@ -347,7 +354,7 @@ margin-top: 30px;
     -moz-appearance: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    margin-left: -100px;
+    margin-left: -160px;
 }
 
 .ostavit__zaefku__btn-one {
@@ -360,4 +367,97 @@ margin-top: 30px;
     border: none;
     cursor: pointer;
     margin-left: -10px;
+}
+
+@media only screen and (max-width:960px)  {
+    .name__input__test__drive-1 {
+        margin-left: -220px;
+        width: 150px;
+        height: 60px;
+        border-radius: 4px;
+        border: none;
+        font-size: 16px;
+        padding: 15px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #c7c7c7; 
+    }
+    
+    .name__input__test__drive-2 {
+        margin-left: -70px;
+        width: 150px;
+        height: 60px;
+        border-radius: 4px;
+        border: none;
+        font-size: 16px;
+        padding: 15px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #c7c7c7;
+    }
+    
+    .custom__select-four {
+        width: 150px;
+        padding: 20px 25px 20px 25px;
+        border-radius: 2px;
+        gap: 10px;
+        opacity: 0px;
+        height: 60px;
+        color: #c3c3c3; 
+        border: none;
+        border-radius: 8px;
+        background-color: #ffffff;
+        appearance: none; 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        margin-left: -15px;
+    }
+    
+    .custom__select-five {
+        width: 150px;
+        padding: 20px 25px 20px 25px;
+        border-radius: 2px;
+        gap: 10px;
+        opacity: 0px;
+        height: 60px;
+        color: #c3c3c3; 
+        border: none;
+        border-radius: 8px;
+        background-color: #ffffff;
+        appearance: none; 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        margin-left: -120px;
+    }
+    
+    .ostavit__zaefku__btn-one {
+        width: 150px;
+        height: 60px;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        background-color: #dc4433;
+        border: none;
+        cursor: pointer;
+        margin-left: -10px;
+    }
+}
+
+
+@media only screen and (max-width:360px) {
+    .test__drive__section {
+        width: 100px;
+    }
 }

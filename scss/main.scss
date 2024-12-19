@@ -1,4 +1,5 @@
 
+
 @use './abstracts/variables';
 @use './abstracts/mixin';
 
@@ -12,6 +13,8 @@
 @use "./components/section";
 @use "./components/section-car";
 @use "./components/cotegory-main";
+@use "./components/model";
+@use "./components/connection";
 
 
 @use "./pages/home";

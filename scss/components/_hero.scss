@@ -95,6 +95,8 @@ text-decoration-skip-ink: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -120px;
+    gap: 50px;
   }
 
   .img__box {
@@ -148,7 +150,7 @@ text-decoration-skip-ink: none;
     }
   }
 
-  @media only screen and (max-width:320px) {
+  @media only screen and (max-width:360px) {
     .hero__title {
       font-size: 22px;
       margin-top: 20px;
