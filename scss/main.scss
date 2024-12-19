@@ -1,24 +1,16 @@
+
 @use './abstracts/variables';
 @use './abstracts/mixin';
 
-
-@use './base/reset';
-@use './base/fonts';
-
+@use "./base/reset";
+@use "./base/fonts";
 
 @use './components/header';
 @use './components/hero';
+@use "./components/contact-hero";
+@use "./components/container";
+@use "./components/news-5";
+
 
 
 @use './pages/home';
-@use "./components/contact-hero";
-@use "./components/container"
-
-
-
-
-
-// body{
-//     background-color: red;
-// }
-

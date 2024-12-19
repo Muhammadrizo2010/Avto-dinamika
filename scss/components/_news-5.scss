@@ -1,0 +1,65 @@
+.section1__new-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.section1__new-box{
+    padding: 10px 15px;
+    border: solid 2px #7c7c7c;
+    border-radius: 10px;
+}
+
+.next__pages {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+.page__number{
+    color: #424242;
+}
+
+.cars__inner {
+    text-align: center;
+    
+}
+
+.see__more {
+    width: 320px;
+    height: 60px;
+    gap: 10px;
+    border-radius: 4px;
+    background: #212121;
+    color: white;
+    border: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    opacity: 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+
+.seo__more:hover{
+    box-shadow: -1px 0px 50px 5px #dc4433;
+    transition: 0.5s linear;
+}
+
+
+
+
+.avtodinamika__map {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
