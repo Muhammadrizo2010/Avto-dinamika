@@ -1,5 +1,6 @@
 
 
+
 @use './abstracts/variables';
 @use './abstracts/mixin';
 
@@ -17,6 +18,7 @@
 @use "./components/connection";
 @use './components/autocredit';
 @use './components/programm';
+@use "./components/news-5";
 @use './components/dinamik';
 @use './components/easy';
 @use './components/test';
