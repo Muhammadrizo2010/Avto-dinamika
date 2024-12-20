@@ -1,11 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/main.css">
 </head>
+
 <body>
-    
+    <div class="top-page-line">
+        <div class="wrapper__info">
+            <span class="hours"> Работаем ежедневно с 9:00 до 21:00 </span>
+            <span class="phone">
+                8 800 777-77-77
+                <a class="phone__info" chref="tel:+74951503345">(Звонок по России бесплатный)</a>
+            </span>
+            <a class="search-link">Поиск</a>
+            <a href="#" class="callback" data-fancybox="call-back-h" data-src="#call-back">Обратный звонок</a>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <img class="header__logo" src="../assests/imgs/2023-03-22 15.27.50 копия.svg"
+                    alt=" Avto dinamika icon" />
+                <ul class="header__menu">
+                    <li class="header__item">
+                        <a class="header__link" href="#">Новые автомобили</a>
+                        <img class="header__img" src="../assests/imgs/Frame 9.svg" alt="" />
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">С пробегом</a>
+                        <img class="header__img" src="../assests/imgs/Frame 9.svg" alt="" />
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Такси в кредит</a>
+                        <img class="header__img" src="../assests/imgs/Frame 9.svg" alt="" />
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="./autocredit.html">Автокредит</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Услуги</a>
+                        <img class="header__img" src="../assests/imgs/Frame 9.svg" alt="" />
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">О компании</a>
+                        <img class="header__img" src="../assests/imgs/Frame 9.svg" alt="" />
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <img class="header__burger" src="../assests/imgs/Group 34.svg" alt="burger logo">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="credit">
+            <div class="container">
+                <div class="credit__inner">
+                    <ul class="credit__sublist">
+                        <li class="credit__subitem">
+                            <a href="./index.html" class="credit__item-link">
+                                Главная >
+                            </a>
+                        </li>
+                        <li class="credit__subitem">
+                            <a href="#" class="credit__item-link">
+                                Автокредит
+                            </a>
+                        </li>
+                    </ul>
+                    <h1 class="credit__title">Автокредит в Авто Динамика</h1>
+                    <p class="credit__text">
+                        Компания Авто Динамика предлагает купить в кредит автомобиль без
+                        первоначального взноса. При оформлении автокредита Вы можете выбрать новый или подержанны
+                        автомобиль.
+                    </p>
+
+                    <div class="calc">
+                        <div class="out">
+
+                            <div class="left">
+                                <h1 class="calc__title">
+                                    Кредитный калькулятор
+                                </h1>
+                                <form class="form">
+                                    <input type="text" placeholder="Марка" class="calc__input-small">
+                                    <input type="text" placeholder="Модель" class="calc__input-small">
+                                    <input type="text" placeholder="Комплектация" class="calc__input-large">
+                                </form>
+
+                                <div class="colors">
+                                    <h2 class="colors__title">Цвет</h2>
+                                    <ul class="colors__list">
+                                        <li class="colors__item">
+                                            <div class="black"></div>
+                                        </li>
+                                        <li class="colors__item">
+                                            <div class="light__black"></div>
+                                        </li>
+                                        <li class="colors__item">
+                                            <div class="grey"></div>
+                                        </li>
+                                        <li class="colors__item">
+                                            <div class="white"></div>
+                                        </li>
+                                        <li class="colors__item">
+                                            <div class="red"></div>
+                                        </li>
+                                        <li class="colors__item">
+                                            <div class="blue"></div>
+                                        </li>
+                                        <li class="colors__item">
+                                            <div class="green"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span class="price__new">11 980 000 руб.*</span>
+                                    <span class="price__old"><del>12 240 000 руб.</del></span>
+
+                                    <p class="price__text">
+                                        * Цена указана с максимальной скидкой по програме выгодной
+                                        автокредит+
+                                    </p>
+                                    <div class="price__check">
+                                        <input type="checkbox">
+                                        <p class="price__check-text">Зачет стоимости автомобиля по программе Trade-In до
+                                            150 000 руб. </p>
+                                    </div>
+                                </div>
+                                <div class="slider">
+
+                                    <div class="slider__section">
+                                        <label class="slider__label">Первоначальный взнос</label>
+                                        <div class="slider__inputs">
+                                            <input type="number" id="initialPercent" class="slider__input"
+                                                value="20" />%
+                                            <input type="number" id="initialAmount" class="slider__input"
+                                                value="2000000" />руб.
+                                        </div>
+                                        <input type="range" id="initialSlider" class="slider__range" min="0" max="80"
+                                            value="20" />
+                                    </div>
+
+
+                                    <div class="slider__section">
+                                        <label class="slider__label">Срок кредита</label>
+                                        <div class="slider__inputs">
+                                            <span id="loanTermDisplay" class="slider__value">54 мес</span>
+                                        </div>
+                                        <input type="range" id="loanTermSlider" class="slider__range" min="6" max="96"
+                                            step="6" value="54" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right">
+                                <div class="right__out">
+                                    <div class="right__out-left">
+                                        <img src="../assests/imgs/Frame 67.png" alt="Cheryy" class="right__img">
+                                    </div>
+                                    <ul class="right__out-list">
+                                        <li class="right__out-item">
+                                            <p class="right__item-text">Марка: Chery</p>
+                                        </li>
+                                        <li class="right__out-item">
+                                            <p class="right__item-text">Модель: Tiggo 7</p>
+                                        </li>
+                                        <li class="right__out-item">
+                                            <p class="right__item-text">Комплектация: Sport 1.5 MT PRO</p>
+                                        </li>
+                                        <li class="right__out-item">
+                                            <p class="right__item-text">Цвет: Красный</p>
+                                        </li>
+                                        <li class="right__out-item">
+                                            <p class="right__item-text">Стоимость: 11 000 000 руб.*</p>
+                                        </li>
+                                        <li class="right__out-item">
+                                            <span class="right__out-span">* Цена указана с максимальной скидкой по
+                                                программе «выгодной автокредит+»</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="term">
+                                    <ul class="term__list">
+                                        <li class="term__item">
+                                            <p class="term__item-text">Кредитная программа: Сhery Finance*
+                                            </p>
+                                        </li>
+                                        <li class="term__item">
+                                            <p class="term__item-text">Первоначальный взнос: 2 000 000 руб.
+                                            </p>
+                                        </li>
+                                        <li class="term__item">
+                                            <p class="term__item-text">Срок кредитования: 54 месяца
+                                            </p>
+                                        </li>
+                                        <li class="term__item">
+                                            <p class="term__item-text">Ежемесячный платеж: 120 000 руб.
+                                            </p>
+                                        </li>
+                                        <li class="term__item">
+                                            <p class="term__item-text">Ставка: 4.6%*
+                                            </p>
+                                        </li>
+                                        <li class="right__out-item">
+                                            <span class="term__item-span">* Цена указана с максимальной скидкой по
+                                                программе «выгодной автокредит+»</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="right__out-btn">Отправить заявку</button>
+                                <div class="right__out-chechbox">
+                                    <input type="checkbox" class="input">
+                                    <p class="right__out-chechbox-text">Я соглашаюсь с условиями и даю свое согласие на
+                                        обработку и использование моих персональных данных
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="prog">
+            <div class="container">
+                <div class="prog__inner">
+                    <h1 class="prog__title">
+                        Кредитные программы
+                    </h1>
+                    <p class="prog__text">
+                        Можете выбрать подходящую для Вас кредитную программу на в автосалоне Авто
+                        Динамика!
+                    </p>
+                    <ul class="prog__list">
+                        <li class="prog__item">
+                            <img src=".././assests/imgs/image 41.svg" alt="KIa" class="prog__img">
+                            <p class="prog__item-text">KIA Finance</p>
+                        </li>
+                        <li class="prog__item">
+                            <img src=".././assests/image 41 (1).svg" alt="Suzuki" class="prog__img">
+                            <p class="prog__item-text">Suzuki Finance</p>
+                        </li>
+                        <li class="prog__item">
+                            <img src=".././assests/imgs/image 41 (2).svg" alt="Chery" class="prog__img">
+                            <p class="prog__item-text">Chery Finance</p>
+                        </li>
+                        <li class="prog__item">
+                            <img src=".././assests/imgs/image 41 (3).svg" alt="geely" class="prog__img">
+                            <p class="prog__item-text">Geely Finance</p>
+                        </li>
+                        <li class="prog__item">
+                            <img src=".././assests/imgs/image 41 (4).svg" alt="LADA" class="prog__img">
+                            <p class="prog__item-text">Лада Finance</p>
+                        </li>
+                    </ul>
+
+                    <div class="terms">
+                        <div class="terms__out">
+                            <div class="terms__out-box">
+                                <span class="terms__title">Требования к заемщику</span>
+                                <span class="terms__icon">+</span>
+                            </div>
+                            <div class="terms__content">
+                                <p>Qonadayeeeeeee Makkammi </p>
+                            </div>
+                        </div>
+
+                        <div class="terms__out">
+                            <div class="terms__out-box">
+                                <span class="terms__title">Требования к документам</span>
+                                <span class="terms__icon">+</span>
+                            </div>
+                            <div class="terms__content">
+                                <p>Qonadayeeeeeee Makkammi </p>
+                            </div>
+                        </div>
+
+                        <div class="terms__out">
+                            <div class="terms__out-box">
+                                <span class="terms__title">Правовая информация</span>
+                                <span class="terms__icon">+</span>
+                            </div>
+                            <div class="terms__content">
+                                <p>Qonadayeeeeeee Makkammi </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="dinamik">
+            <div class="container">
+                <div class="dinamik__inner">
+                    <h1 class="dinamik__title">
+                        Преимущества автокредита в Авто Динамике
+                    </h1>
+                    <ul class="dinamik__list">
+                        <li class="dinamik__item">
+                            <img src="../assests/imgs/image 64.svg" alt="chouse" class="dinamik__item-img">
+                            <h3 class="dinamik__subtitle">Большой выбор</h3>
+                            <p class="dinamik__subtext">
+                                Выгодные программы автокредитования от 10 известных банков
+                            </p>
+                        </li>
+                        <li class="dinamik__item">
+                            <img src="../assests/imgs/image 64.svg" alt="chouse" class="dinamik__item-img">
+                            <h3 class="dinamik__subtitle">Большой выбор</h3>
+                            <p class="dinamik__subtext">
+                                Выгодные программы автокредитования от 10 известных банков
+                            </p>
+                        </li>
+                        <li class="dinamik__item">
+                            <img src="../assests/imgs/image 64.svg" alt="chouse" class="dinamik__item-img">
+                            <h3 class="dinamik__subtitle">Большой выбор</h3>
+                            <p class="dinamik__subtext">
+                                Выгодные программы автокредитования от 10 известных банков
+                            </p>
+                        </li>
+                        <li class="dinamik__item">
+                            <img src="../assests/imgs/image 64.svg" alt="chouse" class="dinamik__item-img">
+                            <h3 class="dinamik__subtitle">Большой выбор</h3>
+                            <p class="dinamik__subtext">
+                                Выгодные программы автокредитования от 10 известных банков
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="easy">
+            <div class="container">
+                <div class="easy__inner">
+                    <h1 class="easy__title">
+                        3 простых шага для получения кредита
+                    </h1>
+                    <ul class="easy__list">
+                        <li class="easy__item">
+                            <p class="easy__text">Получите расчет кредита у специалиста Авто Динамики</p>
+                        </li>
+                        <li class="easy__item">
+                            <p class="easy__text">Получите расчет кредита у специалиста Авто Динамики</p>
+                        </li>
+                        <li class="easy__item">
+                            <p class="easy__text">Получите расчет кредита у специалиста Авто Динамики</p>
+                        </li>
+                    </ul>
+                    <button class="easy__btn">Подать заявку</button>
+
+
+                    <div class="offer">
+                        <h1 class="offers__title">Специальные предложения по кредитам</h1>
+                        <div class="offers">
+                            <div class="offers__big-box">
+                                <img class="offers__big-img" src="/assests/imgs/Frame 63.svg" alt="">
+                            </div>
+                            <div class="offers__small-box">
+                                <img src="/assests/imgs/Frame 64.svg" alt="" class="offers__small-img">
+                                <img src="/assests/imgs/Frame 65.svg" alt="" class="offers__small-img">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="partners">
+                        <h1 class="partners__title">
+                            Наши партнеры
+                        </h1>
+                        <marquee behavior="" direction="">
+                            <div class="partners__box">
+                                <img src="/assests/imgs/image 50.svg" alt="Sberbank Logo" class="logo">
+                                <img src="/assests/imgs/image 51.svg" alt="Sberbank Logo 2" class="logo">
+                                <img src="/assests/imgs/image 52.svg" alt="Alfa-Bank Logo" class="logo">
+                                <img src="/assests/imgs/image 55.svg" alt="Russkiy Standart Logo" class="logo">
+                                <img src="/assests/imgs/image 55.svg" alt="Ingosstrakh Logo" class="logo">
+                                <img src="/assests/imgs/image 55.svg" alt="Reso Garantia Logo" class="logo">
+                            </div>
+                        </marquee>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="question">
+            <div class="container">
+                <div class="question__inner">
+                    <h1 class="question__title">Остались вопросы?</h1>
+                    <h5 class="question__description">
+                        Мы свяжемся с Вами в течении 10 минут и ответим на них.
+                    </h5>
+                    <ul class="question__list">
+                        <li class="question__item">
+                            <input type="text" placeholder="Ваше имя" class="question__input" />
+                        </li>
+                        <li class="question__item">
+                            <input type="text" placeholder="+7 999 999-99-99" class="question__input" />
+                        </li>
+                        <li class="question__item">
+                            <input type="text" placeholder="Ваш email" class="question__input" />
+                        </li>
+                        <li class="question__item">
+                            <button class="question__button">Оставить заявку</button>
+                        </li>
+                    </ul>
+                    <div class="question__consent">
+                        <input type="checkbox" />
+                        <p class="question__consent-text">
+                            Я соглашаюсь с условиями и даю свое согласие на обработку <br />
+                            и использование моих персональных данных
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <secton class="news">
+            <div class="container">
+                <div class="kia__wrapper">
+                    <h2 class="kir__subtitle">Новости KIA</h2>
+                    <p class="kia__text">Посмотреть все</p>
+                </div>
+                <ul class="kia__menu">
+                    <li class="kia__item">
+                        <img class="kia__img" src="../assests/imgs/Rectangle 239.svg" alt="Lada" />
+                        <span class="kia__date">16 марта 2023</span>
+                        <h3 class="kia__subtitle">
+                            LADA внедряет собственную <br />
+                            программу утилизации
+                        </h3>
+                        <p class="kia__text">
+                            Условия программы действуют при сдаче <br />
+                            автомобиля, выходящего из <br />
+                            эксплуатации, в зачет стоимости...
+                        </p>
+                    </li>
+
+                    <li class="kia__item">
+                        <img class="kia__img" src="../assests/imgs/Rectangle 239 (1).svg" alt="Lada" />
+                        <span class="kia__date">16 марта 2023</span>
+                        <h3 class="kia__subtitle">
+                            Дилер BMW отчитался за 2022 <br />
+                            год: "Поставки не прекращались”
+                        </h3>
+                        <p class="kia__text">
+                            На протяжении прошлого года <br />
+                            официальный дилер BMW и Mini в <br />
+                            Беларуси реализовал 408...
+                        </p>
+                    </li>
+
+                    <li class="kia__item">
+                        <img class="kia__img" src="../assests/imgs/Rectangle 239 (2).svg" alt="Lada" />
+                        <span class="kia__date">16 марта 2023</span>
+                        <h3 class="kia__subtitle">
+                            LADA внедряет собственную <br />
+                            программу утилизации
+                        </h3>
+                        <p class="kia__text">
+                            Условия программы действуют при сдаче <br />
+                            автомобиля, выходящего из <br />
+                            эксплуатации, в зачет стоимости...
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </secton>
+
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17910.431417223102!2d37.53712243476564!3d55.86606820000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5379fec9f66a1%3A0x4ec31dfaf1501838!2sAuto-dinamika!5e0!3m2!1sru!2s!4v1734254805801!5m2!1sru!2s"
+                width="100%" height="560px" style="border: 0" allowfullscreen="" class="avtodinamika__map"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="avtodinamika__info">
+        <div class="container">
+            <img style="margin-top: 40px" src="/assests/imgs/2023-03-22 15.27.50 копия 2.svg" alt="" />
+            <div class="footer__inner">
+                <div class="avtodinamika__wrapper">
+                    <span class="avtodinamika__work">Ежедневно с 09:00 до 21:00</span>
+                    <h3 class="avtodinamika__number">+7 495 374-94-88</h3>
+                    <span class="avtodinamika__phone--number">Обратный звонок</span>
+                    <h2 class="avtodinamika__email">support@auto-dinamika.com</h2>
+                    <h2 class="avtodinamika__street">
+                        г. Москва, ул. Крылатская, <br />
+                        д. 2, корп. 4
+                    </h2>
+                </div>
+                <div class="avtodinamika__compani">
+                    <ul class="avtodinamika__menu">
+                        <li class="avtodinamika__item">
+                            <h4 class="avtodinamika__cars">Автомобили</h4>
+                            <p class="avtodinamika__car">Новые автомобили</p>
+                            <p class="avtodinamika__car">Автомобили с пробегом</p>
+                            <p class="avtodinamika__car">Автомобили для такси</p>
+                        </li>
+                    </ul>
+
+                    <ul class="avtodinamika__menu">
+                        <li class="avtodinamika__item">
+                            <h4 class="avtodinamika__cars">Варианты кузоваx</h4>
+                            <p class="avtodinamika__car">Седан</p>
+                            <p class="avtodinamika__car">Кроссовер</p>
+                            <p class="avtodinamika__car">Универсал</p>
+                            <p class="avtodinamika__car">Внедорожник</p>
+                            <p class="avtodinamika__car">Хэтчбек</p>
+                        </li>
+                    </ul>
+
+                    <ul class="avtodinamika__menu">
+                        <li class="avtodinamika__item">
+                            <h4 class="avtodinamika__cars">Услуги</h4>
+                            <p class="avtodinamika__car">Кредит</p>
+                            <p class="avtodinamika__car">Trade-In</p>
+                            <p class="avtodinamika__car">Выкуп автомобилей</p>
+                            <p class="avtodinamika__car">Услуги для такси</p>
+                        </li>
+                    </ul>
+
+                    <ul class="avtodinamika__menu">
+                        <li class="avtodinamika__item">
+                            <h4 class="avtodinamika__cars">О компании</h4>
+                            <p class="avtodinamika__car">Отзывы</p>
+                            <p class="avtodinamika__car">Новости</p>
+                            <p class="avtodinamika__car">Партнеры</p>
+                            <p class="avtodinamika__car">Контакты</p>
+                            <p class="avtodinamika__car">Карта сайта</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="avtodinamika__attention">
+                Обращаем ваше внимание на то, что данный Интернет-сайт носит
+                исключительно информационный характер и ни при каких условиях не
+                является публичной офертой, определяемой положениями статьей 435, 437,
+                494 Гражданского кодекса Российской Федерации. Для получения подробной
+                информации о стоимости автомобилей обращайтесь в отдел
+                продаж.*Представленные на сайте калькуляции кредита на автомобиль
+                являются приблизительными, точная стоимость финансирования
+                рассчитывается кредитным специалистом в br зависимости от
+                индивидуальных параметров заёмщика при предоставлении двух документов
+                в организацию.
+            </p>
+            <p class="avtodinamika__condition">
+                ООО «АВТО-ГАРАНТ», ИНН / КПП 7734459351 / 73401001, Юр. адрес: 123098,
+                г. Москва, ул. Рогова, д. 12, помещение 2П Политика конфиденциальности
+                | Пользовательское соглашение | Условия кредитования
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+
+        const initialSlider = document.getElementById('initialSlider');
+        const initialPercent = document.getElementById('initialPercent');
+        const initialAmount = document.getElementById('initialAmount');
+
+        const loanTermSlider = document.getElementById('loanTermSlider');
+        const loanTermDisplay = document.getElementById('loanTermDisplay');
+
+
+        initialSlider.addEventListener('input', function () {
+            const value = this.value;
+            initialPercent.value = value;
+            this.style.background = 'black';
+        });
+
+
+        loanTermSlider.addEventListener('input', function () {
+            const value = this.value;
+            loanTermDisplay.textContent = value + ' мес';
+            this.style.background = 'black';
+        });
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const headers = document.querySelectorAll(".terms__out-box");
+
+            headers.forEach((header) => {
+                header.addEventListener("click", function () {
+                    const item = this.parentElement;
+
+
+                    item.classList.toggle("terms__item--open");
+
+
+                    document.querySelectorAll(".terms__out").forEach((otherItem) => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove("terms__item--open");
+                        }
+                    });
+                });
+            });
+        });
+
+    </script>
 </body>
+
 </html>

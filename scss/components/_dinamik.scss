@@ -1,0 +1,144 @@
+// .dinamik {
+//     padding: 50px;
+//     background-color: #FAFAFA;
+// }
+
+// .dinamik__inner {}
+
+// .dinamik__title {
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: 600;
+//     font-size: 32px;
+//     margin-bottom: 19px;
+// }
+
+// .dinamik__list {
+//     display: flex;
+//     align-items: center;
+//     gap: 30px;
+// }
+
+// .dinamik__item {
+//     box-shadow: 10px 10px 24px 0px #BCBCBC40;
+//     background-color: #fff;
+//     border-radius: 5px;
+//     padding: 20px;
+// }
+
+// .dinamik__item-img {}
+
+// .dinamik__subtitle {
+//     margin-bottom: 14px;
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: 500;
+//     font-size: 18px;
+// }
+
+// .dinamik__subtext {
+//     font-family: Roboto;
+// font-size: 17px;
+// font-weight: 400;
+// text-align: left;
+// color: #424242;
+// }
+
+
+/* Responsive Styling */
+.dinamik {
+    padding: 50px;
+    background-color: #FAFAFA;
+}
+
+.dinamik__inner {}
+
+.dinamik__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 19px;
+}
+
+.dinamik__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dinamik__item {
+    box-shadow: 10px 10px 24px 0px #BCBCBC40;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(25% - 30px);
+}
+
+.dinamik__item:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 30px 0px #00000050;
+}
+
+.dinamik__item-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.dinamik__subtitle {
+    margin-bottom: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.dinamik__subtext {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    color: #424242;
+}
+
+@media only screen and (max-width: 1024px) {
+    .dinamik__item {
+        flex: 1 1 calc(50% - 30px);
+    }
+
+    .dinamik__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dinamik__subtitle {
+        font-size: 16px;
+    }
+
+    .dinamik__subtext {
+        font-size: 15px;
+        width: 190px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .dinamik__item {
+        flex: 1 1 100%;
+        padding: 15px;
+    }
+
+    .dinamik__title {
+        font-size: 24px;
+    }
+
+    .dinamik__subtitle {
+        font-size: 14px;
+    }
+
+    .dinamik__subtext {
+        font-size: 16px;
+    }
+
+}
+
+

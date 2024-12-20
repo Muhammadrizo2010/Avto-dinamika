@@ -1,0 +1,143 @@
+.prog {
+    padding: 50px;
+}
+
+.prog__inner {}
+
+.prog__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.prog__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.prog__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.prog__item {
+    border: 1px solid #C7C7C7;
+    box-shadow: 10px 10px 24px 0px #BCBCBC40;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prog__item:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 30px 0px #00000050;
+}
+
+.prog__img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.prog__item-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 890px) {
+    .prog__list {
+        gap: 15px;
+    }
+
+    .prog__item {
+        padding: 15px;
+    }
+
+    .prog__img {
+        max-width: 80%;
+    }
+
+    .prog__item-text {
+      font-size: 8px ;
+    }
+}
+
+.terms {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.terms__out {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.terms__out-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.terms__out-box:hover {
+    background-color: #ececec;
+}
+
+.terms__title {
+    font-weight: bold;
+    color: #333;
+}
+
+.terms__icon {
+    font-size: 1.2em;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+.terms__content {
+    display: none;
+    padding: 15px 20px;
+    background-color: #fff;
+    color: #555;
+    border-top: 1px solid #ccc;
+}
+
+.terms__item--open .terms__content {
+    display: block;
+}
+
+.terms__item--open .terms__icon {
+    transform: rotate(45deg);
+    color: #007bff;
+}
+
+@media only screen and (max-width: 890px) {
+    .terms {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .terms__out-box {
+        padding: 10px 15px;
+    }
+
+    .terms__content {
+        padding: 10px 15px;
+    }
+}
