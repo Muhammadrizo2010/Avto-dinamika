@@ -23,3 +23,49 @@ padding-top: 60px;
     gap: 30px;
     margin-top: 40px;
 }
+
+
+@media only screen and (max-width:320px) {
+    .rent__wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .rent__menu {
+        flex-direction: column;
+    }
+    .rent__item {
+        width:  300px;
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .rent__wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .rent__menu {
+        flex-direction: column;
+    }
+    .rent__item {
+        width: 440px;
+        height: 320px;
+    }
+    .cars__titl e {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .rent__wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .rent__menu {
+        flex-direction: column;
+    }
+    .rent__item {
+        width:  300px;
+        height: 360px;
+    }
+}

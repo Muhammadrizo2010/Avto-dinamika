@@ -671,6 +671,7 @@
         width: 300px;
         height: 190px;
         margin-top: -11px;
+        max-width: 100%;
     }
 
     .lada__text__h3{
@@ -725,6 +726,9 @@
     .footer__inner {
         flex-wrap: wrap;
     }
+    .news__ul {
+        gap: 20px;
+    }
 }
 
 @media only screen and (max-width:460px) {
@@ -752,7 +756,6 @@
         margin-left: 20px;
     }
 
-   
 
     .displayy__none{
         display: none;
@@ -881,6 +884,7 @@
     }
 
     .bmw__images{
+        max-width: 100%;
         width: 220px;
         height: 190px;
         margin-top: -36px;
@@ -914,7 +918,7 @@
     }
 
     .news__ul{
-        gap: 20px;
+        gap: 10px;
     }
 
     .kia__comfort__text{
@@ -966,6 +970,9 @@
 
     .test__drive__h1 {
         margin-left: 15px;
+    }
+    .test__drive__section {
+        margin-bottom: 300px;
     }
  
 }
@@ -1217,5 +1224,9 @@
     .footer-1 {
         height: auto;
         width: 100%;
+    }
+
+    .test__drive__section {
+        margin-bottom: 300px;
     }
 }

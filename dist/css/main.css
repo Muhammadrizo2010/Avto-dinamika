@@ -2878,6 +2878,10 @@ ul {
   .kia__img {
     display: none;
   }
+  .cars__wrapper {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 @media only screen and (max-width: 360px) {
   .catalog__menu {
@@ -3633,6 +3637,7 @@ ul {
     width: 300px;
     height: 190px;
     margin-top: -11px;
+    max-width: 100%;
   }
   .lada__text__h3 {
     width: 270px;
@@ -3675,6 +3680,9 @@ ul {
   }
   .footer__inner {
     flex-wrap: wrap;
+  }
+  .news__ul {
+    gap: 20px;
   }
 }
 @media only screen and (max-width: 460px) {
@@ -3795,6 +3803,7 @@ ul {
     height: 400px;
   }
   .bmw__images {
+    max-width: 100%;
     width: 220px;
     height: 190px;
     margin-top: -36px;
@@ -3821,7 +3830,7 @@ ul {
     font-size: 13px;
   }
   .news__ul {
-    gap: 20px;
+    gap: 10px;
   }
   .kia__comfort__text {
     font-size: 24px;
@@ -3857,6 +3866,9 @@ ul {
   }
   .test__drive__h1 {
     margin-left: 15px;
+  }
+  .test__drive__section {
+    margin-bottom: 300px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -4048,6 +4060,9 @@ ul {
     height: auto;
     width: 100%;
   }
+  .test__drive__section {
+    margin-bottom: 300px;
+  }
 }
 .connection__title {
   font-family: Roboto;
@@ -4115,9 +4130,9 @@ ul {
     margin-top: 60px;
   }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 320px) {
   .connection__menu {
-    display: flex;
+    display: flow-root;
   }
   .connection__item {
     flex-direction: column;
@@ -5268,7 +5283,7 @@ ul {
 }
 .avtodinamika__info {
   width: 100%;
-  height: 537px;
+  height: 1000px;
   background-color: #000000;
 }
 
@@ -5453,4 +5468,47 @@ ul {
   display: flex;
   gap: 30px;
   margin-top: 40px;
+}
+
+@media only screen and (max-width: 320px) {
+  .rent__wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .rent__menu {
+    flex-direction: column;
+  }
+  .rent__item {
+    width: 300px;
+    height: 360px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .rent__wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .rent__menu {
+    flex-direction: column;
+  }
+  .rent__item {
+    width: 440px;
+    height: 320px;
+  }
+  .cars__titl e {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .rent__wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .rent__menu {
+    flex-direction: column;
+  }
+  .rent__item {
+    width: 300px;
+    height: 360px;
+  }
 }

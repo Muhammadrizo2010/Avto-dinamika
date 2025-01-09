@@ -87,9 +87,9 @@ color: #424242;
 }
 
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:320px) {
     .connection__menu {
-        display: flex;
+        display: flow-root;
     }
     .connection__item {
         flex-direction: column;
