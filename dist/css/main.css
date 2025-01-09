@@ -1442,39 +1442,39 @@ ul {
   }
   .custom__select-two {
     width: 270px;
-    height: 60px;
     top: 216px;
     left: 30px;
     padding: 21px 15px 20px 15px;
     gap: 10px;
     border-radius: 4px;
     opacity: 0px;
+    height: 60px;
   }
   .avtomobil__big-box {
     margin-left: -15px;
   }
   .avtomobil__name {
     width: 270px;
-    height: 60px;
     top: 376px;
     left: 30px;
     gap: 10px;
     border-radius: 4px;
     opacity: 0px;
+    height: 60px;
   }
   .price__input {
-    width: 160px;
     border-radius: 4px;
+    width: 160px;
   }
   .custom__select-three {
     width: 270px;
-    height: 60px;
     top: 216px;
     left: 30px;
     padding: 21px 15px 20px 15px;
     gap: 10px;
     border-radius: 4px;
     opacity: 0px;
+    height: 60px;
   }
   .select__btn {
     margin-left: -0.1px;

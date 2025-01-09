@@ -1544,6 +1544,50 @@
   </div>
 </footer>
 
+<script>
+
+        const initialSlider = document.getElementById('initialSlider');
+        const initialPercent = document.getElementById('initialPercent');
+        const initialAmount = document.getElementById('initialAmount');
+
+        const loanTermSlider = document.getElementById('loanTermSlider');
+        const loanTermDisplay = document.getElementById('loanTermDisplay');
+
+
+        initialSlider.addEventListener('input', function () {
+            const value = this.value;
+            initialPercent.value = value;
+            this.style.background = 'black';
+        });
+
+
+        loanTermSlider.addEventListener('input', function () {
+            const value = this.value;
+            loanTermDisplay.textContent = value + ' мес';
+            this.style.background = 'black';
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const headers = document.querySelectorAll(".terms__out-box");
+
+            headers.forEach((header) => {
+                header.addEventListener("click", function () {
+                    const item = this.parentElement;
+
+
+                    item.classList.toggle("terms__item--open");
+
+
+                    document.querySelectorAll(".terms__out").forEach((otherItem) => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove("terms__item--open");
+                        }
+                    });
+                });
+            });
+        });
+
+    </script>
 
 </body>
 </html>
